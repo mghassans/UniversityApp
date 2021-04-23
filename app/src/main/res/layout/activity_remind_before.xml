@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B7178"
+    tools:context=".RemindBefore">
+
+    <TextView
+        android:id="@+id/remindBeforeTV"
+        android:layout_width="319dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:background="#42676E"
+        android:text="\n       Select Before Time"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:text="Select prior time for your reminder:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remindBeforeTV"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="240dp"
+        android:layout_height="214dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <RadioButton
+            android:id="@+id/fifteenRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9CDCDD"
+            android:checked="true"
+            android:onClick="radioBClicked"
+            android:text="15 mins"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/thirtyRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9CDCDD"
+            android:onClick="radioBClicked"
+            android:text="30 mins"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/fourtyFiveRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9CDCDD"
+            android:onClick="radioBClicked"
+            android:text="45 mins"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/oneHourRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9CDCDD"
+            android:onClick="radioBClicked"
+            android:text="on Time"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

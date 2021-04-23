@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B7178"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/HeadingTV"
+        android:layout_width="395dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="352dp"
+        android:background="#2D4C51"
+        android:text="                                                                             Reminders for you :"
+        android:textAlignment="center"
+        android:textColor="#F4F1F1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addReminderFAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listReminderL"
+        android:layout_width="308dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeadingTV"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addReminderFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:onClick="fbuttonClicked"
+        app:backgroundTint="#42676E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
